@@ -102,11 +102,11 @@ The application will open at `http://localhost:3000`
 - **Special Connection:** Our song that holds precious memories
 
 <p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=yourusername&theme=radical&utcOffset=3" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?zuck30=yourzuck30&theme=radical&utcOffset=3" />
 </p>
 
 <p align="center">
-<img src="https://github-widgetbox.vercel.app/api/profile?username=yourusername&data=repositories,stars,commits&theme=radical&title_color=ff69b4">
+<img src="https://github-widgetbox.vercel.app/api/profile?zuck30=yourzuck30&data=repositories,stars,commits&theme=radical&title_color=ff69b4">
 </p>
 
 <!-- ✨ Divider -->
