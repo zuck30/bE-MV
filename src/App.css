@@ -1,0 +1,422 @@
+:root {
+  --pink: #ff69b4;
+  --deep-pink: #ff1493;
+  --soft-pink: #ffe4e9;
+  --light-pink: #fff0f5;
+  --shadow-pink: rgba(255, 105, 180, 0.15);
+  --shadow-deep: rgba(255, 20, 147, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--light-pink), var(--soft-pink));
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.App {
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at center, rgba(255,105,180,0.15), transparent);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.big-heart {
+  font-size: 120px;
+  animation: beat 1.2s infinite;
+  display: block;
+  margin: 0 auto 20px;
+  color: var(--deep-pink);
+  filter: drop-shadow(0 0 15px rgba(255, 20, 147, 0.3));
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
+  color: var(--deep-pink);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #7a3b69;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Sections */
+.section {
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--deep-pink);
+}
+
+/* Message Container */
+.message-container {
+  background-color: white;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 30px auto;
+  box-shadow: 0 15px 40px var(--shadow-pink);
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s;
+}
+
+.message-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px var(--shadow-deep);
+}
+
+.message-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, var(--pink), var(--deep-pink));
+}
+
+.message {
+  font-size: 1.25rem;
+  line-height: 1.9;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: var(--deep-pink);
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+}
+
+/* Interactive Cards */
+.interactive-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px var(--shadow-pink);
+  transition: all 0.4s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px var(--shadow-deep);
+}
+
+.card i {
+  font-size: 3.5rem;
+  color: var(--deep-pink);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #7a3b69;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: linear-gradient(to right, var(--pink), var(--deep-pink));
+  color: white;
+  padding: 16px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 20px 10px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(255, 64, 129, 0.4);
+}
+
+/* Valentine Game */
+.valentine-game {
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.game-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.btn-yes {
+  background: linear-gradient(to right, var(--pink), var(--deep-pink));
+  color: white;
+  padding: 18px 50px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  box-shadow: 0 10px 25px var(--shadow-deep);
+}
+
+.btn-yes:hover {
+  transform: scale(1.15);
+}
+
+.btn-no {
+  background: #ddd;
+  padding: 18px 50px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Countdown */
+.countdown {
+  background-color: white;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 15px 40px var(--shadow-pink);
+  max-width: 700px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.timer-unit {
+  background: linear-gradient(135deg, var(--pink), var(--deep-pink));
+  color: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+  min-width: 90px;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3);
+}
+
+.timer-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.timer-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+/* Love Letter */
+.love-letter {
+  background-color: #fff9fb;
+  border: 3px dashed var(--pink);
+  border-radius: 25px;
+  padding: 50px;
+  margin: 60px auto;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 10px 30px var(--shadow-pink);
+}
+
+.ode-poem {
+  font-style: italic;
+  text-align: center;
+  line-height: 2;
+  margin: 35px 0;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  border-left: 5px solid var(--deep-pink);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.poem-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.3rem;
+  color: var(--deep-pink);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.poem-line {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: var(--deep-pink);
+  text-align: right;
+  margin-top: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Audio Player */
+.audio-player-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 10px 30px var(--shadow-pink);
+}
+
+/* Secret Message */
+.secret-message {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-color: var(--light-pink);
+  border-radius: 20px;
+  padding: 0 30px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.secret-message.active {
+  opacity: 1;
+  height: auto;
+  padding: 40px;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px var(--shadow-pink);
+}
+
+/* Proposal Link */
+.proposal-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.proposal-link a {
+  color: var(--deep-pink);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px dotted var(--deep-pink);
+  padding-bottom: 3px;
+  transition: all 0.3s;
+}
+
+.proposal-link a:hover {
+  border-bottom: 2px solid var(--deep-pink);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to top, var(--pink), var(--deep-pink));
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 60px;
+  border-radius: 30px 30px 0 0;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 3.2rem; }
+  .big-heart { font-size: 80px; }
+  .subtitle { font-size: 1.4rem; }
+  .section-title { font-size: 2.8rem; }
+  .message-container { padding: 30px; }
+  .countdown-timer { gap: 15px; }
+  .timer-unit { min-width: 75px; }
+  .timer-value { font-size: 2.2rem; }
+  .love-letter { padding: 30px; }
+  .ode-poem { padding: 20px; }
+  .game-buttons { gap: 20px; }
+  .btn-yes, .btn-no { padding: 15px 30px; font-size: 1.2rem; }
+}
