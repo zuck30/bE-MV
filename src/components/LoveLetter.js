@@ -4,13 +4,13 @@ const LoveLetter = () => {
   return (
     <div className="love-letter">
       <h2 className="section-title">My Love Letter to You</h2>
-      <p className="message">My dearest Shekha,</p>
+      <p className="message">My dearest Baby,</p>
       <p className="message">As I sit down to write this letter, my heart overflows with love for you. There are not enough words in any language to truly express how much you mean to me.</p>
       <p className="message">You came into my life like a beautiful sunrise, coloring my world with hues of joy, passion, and unconditional love. With you, I've discovered parts of myself I never knew existed.</p>
       
       <div className="ode-poem">
-        <div className="poem-title">Ode to Shekha</div>
-        <div className="poem-line">An Ode to Shekha, Written while listening to Beanie by Chezile.</div>
+        <div className="poem-title">Ode to Baby</div>
+        <div className="poem-line">An Ode to Baby, Written while listening to Beanie by Chezile.</div>
         <div className="poem-line">Are you that cute</div>
         <div className="poem-line">or you're the face of chamomile petals?</div>
         <div className="poem-line">I love you without knowing how and why.</div>
