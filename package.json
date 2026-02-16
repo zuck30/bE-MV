@@ -2,7 +2,7 @@
   "name": "be-mv",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://zuck30.github.io/be-mv-valentine/",
+  "homepage": "https://zuck30.github.io/be-my-valentine/",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
